@@ -168,7 +168,10 @@ section .title::before {
   margin-right: 0;
 }
 .home .home-content .text-1 {
-  font-size: 28px;
+  font-size: 35px;
+  font-weight: 500;
+  font-family:"Ubuntu", sans-serif;
+
 }
 .home .home-content .text-2 {
   font-size: 78px;
@@ -293,7 +296,7 @@ section .title::before {
 }
 .skills .skills-content .right span {
   font-weight: 500;
-  font-size: 22px;
+  font-size: 25px;
 }
 .skills .skills-content .right .line {
   height: 8px;
@@ -373,13 +376,10 @@ section .title::before {
 .contact .contact-content .text {
   font-size: 20px;
   font-weight: 600;
-  margin-bottom: 10px;
 }
-.contact .contact-content .left p {
-  text-align: justify;
-}
+
 .contact .contact-content .left .icons {
-  margin: 10px 0;
+  margin: 50px 10 0;
 }
 .contact .contact-content .row {
   display: flex;
@@ -594,7 +594,6 @@ footer span a:hover {
 
   }
   .teams{
-    height: 140vh;
     background: url("sslc.PNG") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
@@ -660,9 +659,8 @@ footer span a:hover {
   }
   .contact .contact-content .info .sub-title {
     color: #e6dede;
-    font-size: 24px;
-    margin-top: 10px;
-    font-weight: 600;
+    font-size: 22px;
+    font-weight: 500;
   }
   .messageme {
     font-family: "Ubuntu", sans-serif;
@@ -675,31 +673,27 @@ footer span a:hover {
     font-weight: 800;
     font-size: 22px;
     color: rgb(185, 37, 37);
-   border-radius: 0px #333;
+    border-radius: 0px #333;
   }
   .experiences{
     color: white;
     font-weight: 810;
-    font-size: 21px;
+    font-size: 24px;
   }
   .touch{
     color: white;
     font-weight: 700;
     font-size: 26px;
-    margin-top: 10px;
     font-family: "Ubuntu", sans-serif;
 
   }
   .contact .right form .field,
   .contact .right form .fields .field {
     height: 50px;
-    width: 55%;
-    margin-bottom: 15px;
+    width: 50%;
+    margin-bottom: 20px;
   }
-  .contact .right form .textarea {
-    height: 80px;
-    width:  55%;
-  }
+ 
   .head{
     color: rgb(4, 2, 17);
     font-weight: 750;
@@ -710,7 +704,6 @@ footer span a:hover {
   .contact .right form .textarea textarea {
     height: 120%;
     width: 100%;
-    margin-bottom: 30px;
     border: 2px solid rgb(243, 243, 248);
     background-color: #070707;
     border-radius: 8px;
@@ -734,4 +727,35 @@ footer span a:hover {
   }
  .thanks{
   font-family: "Ubuntu", sans-serif;
+}
+
+.horizontal-list {
+  list-style: none;
+  padding-left: 0px;
+  margin: 0px;
+}
+#name-social-container {
+  margin-top: 32vh;
+  margin-left: -530px;
+}
+.horizontal-list li {
+  display: inline-block;
+  margin: 0px 8px 8px 0px;
+  font-weight: 100;
+  font-size: 0.9rem;
+}
+
+.horizontal-list li a {
+  color: rgb(245, 241, 241);
+  text-decoration: none;
+ 
+}
+.social-icons li a i {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 50%;
+}
+
+.social-icons li a i:hover {
+    box-shadow: 0px 0px 6px 4px rgba(252, 251, 251, 0.3);
 }
