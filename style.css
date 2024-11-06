@@ -154,7 +154,7 @@ section .title::before {
   transition: all 0.3s ease;
 }
 .scroll-up-btn.show {
-  bottom: 50px;
+  bottom: 20px;
   opacity: 5;
   pointer-events: auto;
 }
@@ -264,19 +264,21 @@ section .title::before {
 }
 .services .serv-content .card:hover .box {
   color: #070707;
+  align-items: center;
   background-color: #f8efef;
 }
 .services .serv-content .card .text {
   font-size: 26px;
   font-weight: 650;
-  margin: 15px 0 10px 0;
+  align-items: center;
+  margin: 10px 0 8px 0;
 }
 .skills .title::after {
   color: #110436;
   content: "what i know";
   background-color: rgb(10, 247, 227);
 }
-.skills .skills-content .column {
+.skills .skills-content .column .services .serv-content{
   width: calc(95% - 90px);
 }
 
@@ -285,26 +287,23 @@ section .title::before {
   justify-content: space-between;
 }
 .skills .skills-content .right span {
-  font-weight: 500;
-  font-size: 25px;
+  font-weight: 400;
+  font-size: 24px;
 }
 .skills .skills-content .right .line {
-  height: 8px;
+  height: 7px;
   width: 100%;
   background:rgb(231, 208, 1);
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 18px;
   border: 1px solid rgb(5, 5, 5);
-}
-.skiltitle{
-  font-weight: 400;
-  font-size: 20px;
 }
 .skills{
   font-family: "Ubuntu", sans-serif;
   background: url("try3.PNG") no-repeat center;
   background-size: cover;
   background-attachment: fixed;
+  align-items:center;
   }
 .skills .skills-content .right .line::before {
   content: "";
@@ -343,25 +342,9 @@ section .title::before {
 }
 .owl-dots {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 60px;
 }
-.owl-dot {
-  height: 13px;
-  width: 13px;
-  margin: 0 5px;
-  outline: none !important;
-  border-radius: 50%;
-  border: 2px solid crimson !important;
-  transition: all 0.3s ease;
-}
-.owl-dot.active {
-  width: 35px;
-  border-radius: 14px;
-}
-.owl-dot.active,
-.owl-dot:hover {
-  background: crimson !important;
-}
+
 .contact .title::after {
   color: #030303;
   background-color: rgb(242, 237, 243);
@@ -481,14 +464,6 @@ footer span a:hover {
   }
 }
 
-@media (max-width: 690px) {
-  .max-width {
-    padding: 0 23px;
-  }
-  .services .serv-content .card {
-    width: 100%;
-  }
-}
   .home .home-content .text-3 {
     font-size: 28px;
   }
@@ -551,6 +526,23 @@ footer span a:hover {
     background-attachment: fixed;
 
   }
+  .owl-dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2px solid rgb(238, 40, 5) !important;
+    transition: all 0.3s ease;
+  }
+  .owl-dot.active {
+    width: 45px;
+    border-radius: 20px;
+  }
+  .owl-dot.active,
+  .owl-dot:hover {
+    background: rgb(235, 230, 230) !important;
+  }
   .teams{
     background: url("sslc.PNG") no-repeat center;
     background-size: cover;
@@ -587,14 +579,14 @@ footer span a:hover {
     align-items: center;
     margin-top: 80px;
     margin-bottom: 80px;
-    transform: scale(1.6);
+    transform: scale(1.4);
   }
   .teams .carousel .card:hover .box {
-    transform: scale(2.2);
+    transform: scale(1.8);
   }
   .teams .carousel .card .text {
     font-size: 13px;
-    font-weight: 100;
+    font-weight: 90;
     margin: 50px 30px 5;
   }
   .teams .carousel .card img {
