@@ -249,10 +249,9 @@ section .title::before {
   border: 2px solid rgb(238, 234, 4);
 }
 .services{
+  height: 180vh;
   font-size: 24px;
-  display: flex;
-  font-weight: 700px;
-  align-items: center;
+  font-weight: 600px;
   background: url("bgtry9.PNG") no-repeat center;
   font-family: "Ubuntu", sans-serif;
   background-attachment: fixed;
@@ -264,10 +263,10 @@ section .title::before {
   background-color: rgb(21, 221, 37);
 }
 .services .serv-content .card {
-  width: calc(30% - 80px);
+  width: calc(30% - 75px);
   background: #030303;
-  text-align: center;
   border-radius: 6px;
+  text-align: center;
   padding: 50px 25px;
   cursor: pointer;
 }
@@ -283,12 +282,12 @@ section .title::before {
   align-items: center;
   margin: 10px 0 8px 0;
 }
-@media (max-width: 690px) {
+@media (max-width: 650px) {
   .max-width {
-    padding: 0 23px;
+    padding: 0 20px;
   }
   .services .serv-content .card {
-    width: 80%;
+    width: 50%;
   }
 }
 .skills .title::after {
@@ -301,7 +300,6 @@ section .title::before {
 }
 
 .skills .skills-content .right .info {
-  display: flex;
   justify-content: space-between;
 }
 .skills .skills-content .right span {
@@ -309,7 +307,7 @@ section .title::before {
   font-size: 24px;
 }
 .skills .skills-content .right .line {
-  height: 7px;
+  height: 8px;
   width: 100%;
   background:rgb(231, 208, 1);
   position: relative;
@@ -317,7 +315,6 @@ section .title::before {
   border: 1px solid rgb(5, 5, 5);
 }
 .skills{
-  display: flex;
   font-family: "Ubuntu", sans-serif;
   background: url("try3.PNG") no-repeat center;
   background-size: cover;
@@ -537,7 +534,6 @@ footer span a:hover {
   font-family: "Ubuntu", sans-serif;
 }
 .about{
-  display: flex;
   background: url("sss.PNG") no-repeat center;
   font-size: 25px;
   font-weight: 500;
@@ -546,7 +542,6 @@ footer span a:hover {
   background-attachment: fixed;
 }
   .teams{
-    display: flex;
     background: url("sslc.PNG") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
