@@ -33,11 +33,14 @@ section {
   font-family: "Poppins", sans-serif;
   color: #e9e4e4;
 }
-.services .serv-content,
+.serv-content,
 .skills .skills-content{
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  margin-left: 60px;
+  margin-top: 20px;
+  font-weight: 200;
+  font-size: 20px;
   justify-content: space-between;
 }
 section .title {
@@ -151,53 +154,50 @@ section .title::before {
   transition: all 0.3s ease;
 }
 .scroll-up-btn.show {
-  bottom: 30px;
-  opacity: 1;
+  bottom: 50px;
+  opacity: 5;
   pointer-events: auto;
 }
 .scroll-up-btn:hover {
-  filter: brightness(90%);
+  filter: brightness(100%);
 }
 
 .home .max-width {
   width: 100%;
   display: flex;
 }
-.home .max-width .row {
-  margin-right: 0;
-}
 .home .home-content .text-1 {
   font-size: 35px;
-  font-weight: 500;
+  font-weight: 400;
   font-family:"Ubuntu", sans-serif;
-
 }
 .home .home-content .text-2 {
-  font-size: 70px;
-  font-weight: 600;
+  font-size: 65px;
+  font-weight: 800;
   margin-left: -6px;
 }
 .home .home-content .text-3 {
-  font-size: 90px;
-  margin: 9px 0;
+  font-size: 40px;
+  margin: 5px 0;
 }
 .home .home-content .text-3 span {
-  color: rgb(221, 212, 221);
-  font-weight: 500;
+  color: rgb(223, 204, 201);
+  font-weight: 600;
+  font-size: 35px;
 }
 .home .home-content .text-3 span:hover{
-  color: rgb(238, 43, 8);
+  color: rgb(214, 54, 54);
   font-size: 30px;
 }
 .home .home-content a {
   display: inline-block;
-  background: rgb(214, 7, 7);
-  color: #f3f0f0;
-  font-size: 28px;
-  padding: 8px 20px;
+  background: rgb(194, 22, 22);
+  color: #f7f7f7;
+  font-size: 24px;
+  padding: 6px 16px;
   margin-top: 20px;
   font-weight: 400;
-  border-radius: 8px;
+  border-radius: 5px;
   transition: all 0.3s ease;
 }
 .home .home-content a:hover {
@@ -278,19 +278,10 @@ section .title::before {
 }
 .skills .skills-content .column {
   width: calc(95% - 90px);
-  align-items: center;
 }
-.skills .skills-content .left .text {
-  font-size: 35px;
-  font-weight: 950;
-}
-.skills .skills-content .right .bars {
-  margin-bottom: 40px;
-}
+
 .skills .skills-content .right .info {
   display: flex;
-  margin-bottom: 10px;
-  align-items: center;
   justify-content: space-between;
 }
 .skills .skills-content .right span {
@@ -302,9 +293,19 @@ section .title::before {
   width: 100%;
   background:rgb(231, 208, 1);
   position: relative;
-  border: 1px solid rgb(243, 237, 237);
-
+  margin-bottom: 30px;
+  border: 1px solid rgb(5, 5, 5);
 }
+.skiltitle{
+  font-weight: 400;
+  font-size: 20px;
+}
+.skills{
+  font-family: "Ubuntu", sans-serif;
+  background: url("try3.PNG") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  }
 .skills .skills-content .right .line::before {
   content: "";
   position: absolute;
@@ -321,17 +322,15 @@ section .title::before {
 }
 .reading-card.open {
   height: auto;
- 
 }
 .reading-card.open .card-content {
   display: block;
-
 }
 .skills-content .right .html::before {
-  width: 70%;
+  width: 80%;
 }
 .skills-content .right .css::before {
-  width: 70%;
+  width: 60%;
 }
 .skills-content .right .js::before {
   width: 70%;
@@ -340,9 +339,8 @@ section .title::before {
   width: 50%;
 }
 .skills-content .right .mysql::before {
-  width: 70%;
+  width: 60%;
 }
-
 .owl-dots {
   text-align: center;
   margin-top: 20px;
@@ -463,14 +461,8 @@ footer span a:hover {
     margin: 20px 0;
     font-size: 25px;
   }
-  .home .home-content .text-2 {
-    font-size: 70px;
-  }
-  .home .home-content .text-3 {
-    font-size: 35px;
-  }
   .home .home-content a {
-    font-size: 23px;
+    font-size: 20px;
     padding: 10px 30px;
   }
   .max-width {
@@ -487,24 +479,11 @@ footer span a:hover {
   .about .about-content .right {
     flex: 100%;
   }
-  .services .serv-content .card {
-    width: calc(50% - 10px);
-    margin-bottom: 20px;
-  }
 }
 
 @media (max-width: 690px) {
   .max-width {
     padding: 0 23px;
-  }
-  .home .home-content .text-2 {
-    font-size: 60px;
-  }
-  .home .home-content .text-3 {
-    font-size: 32px;
-  }
-  .home .home-content a {
-    font-size: 20px;
   }
   .services .serv-content .card {
     width: 100%;
@@ -562,13 +541,7 @@ footer span a:hover {
   background-size: cover;
   background-attachment: fixed;
 }
-.skills{
-  background-size: cover;
-  font-family: "Ubuntu", sans-serif;
-  background: url("try3.PNG") no-repeat center;
-  background-size: cover;
-  background-attachment: fixed;
-  }
+
   .services{
     background: url("bgtry9.PNG") no-repeat center;
     font-size: 24px;
@@ -662,8 +635,9 @@ footer span a:hover {
   }
   .experiences{
     color: white;
-    font-weight: 810;
-    font-size: 24px;
+    font-weight: 710;
+    text-align: start;
+    font-size: 25px;
   }
   .touch{
     color: white;
