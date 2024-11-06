@@ -264,20 +264,16 @@ section .title::before {
   width: calc(30% - 80px);
   background: #030303;
   border-radius: 6px;
-  text-align: center;
   padding: 50px 30px;
   cursor: pointer;
 }
 .services .serv-content .card:hover .box {
   color: #070707;
-  align-items: center;
-  text-align: center;
   background-color: #f8efef;
 }
 .services .serv-content .card .text {
   font-size: 26px;
   font-weight: 500;
-  align-items: center;
   margin: 10px 0 8px 0;
 }
 
@@ -525,6 +521,7 @@ footer span a:hover {
   font-family: "Ubuntu", sans-serif;
 }
 .about{
+  height: 180vh;
   background: url("sss.PNG") no-repeat center;
   font-size: 25px;
   font-weight: 500;
