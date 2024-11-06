@@ -314,7 +314,7 @@ section .title::before {
   color: #dde4e3;
   font-weight: 400;
   font-family: "Ubuntu", sans-serif;
-
+  margin-left: 20px;
   font-size: 22px;
 }
 .reading-card.open {
@@ -340,56 +340,7 @@ section .title::before {
 .skills-content .right .mysql::before {
   width: 70%;
 }
-.teams .title::after {
-  content: "College/University";
-    background-color: rgb(214, 27, 27);
-    color: #f0ec0b;
-  }
 
-.teams .carousel .card {
-  background: #f12602;
-  border: 1px solid rgb(235, 232, 238);
-  padding: 10px 35px;
-  color: #eff1f1;
-  font-weight: 600;
-  font-size: 25px;
-  text-align: center;
-  font-family: "Ubuntu", sans-serif;
-  overflow: hidden;
-  transition: all 0.3s ease;
-}
-.teams .carousel .card:hover {
-  background: rgb(199, 233, 4);
-  font-family: "Ubuntu", sans-serif;
-  border: 1px solid rgb(10, 10, 10);
-  color: #000a09;
-}
-.teams .carousel .card .box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease;
-}
-.teams .carousel .card:hover .box {
-  transform: scale(1.05);
-}
-.teams .carousel .card .text {
-  font-size: 25px;
-  font-weight: 500;
-  margin: 10px 0 7px 0;
-}
-.teams .carousel .card img {
-  height: 150px;
-  width: 150px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 5px solid crimson;
-  transition: all 0.3s ease;
-}
-.teams .carousel .card:hover img {
-  border-color: #0e0d0d;
-}
 .owl-dots {
   text-align: center;
   margin-top: 20px;
@@ -609,7 +560,7 @@ footer span a:hover {
 
 .home {
   display: flex;
-  background: url("./try-1.PNG") no-repeat center;
+  background: url("try-1.PNG") no-repeat center;
   height: 100vh;
   color: #b9c428;
   min-height: 500px;
@@ -618,9 +569,9 @@ footer span a:hover {
   font-family: "Ubuntu", sans-serif;
 }
 .about{
-  height: 195vh;
-  background: url("./sss.PNG") no-repeat center;
-  font-size: 26px;
+  height: 200vh;
+  background: url("sss.PNG") no-repeat center;
+  font-size: 25px;
   font-weight: 500;
   color: #e7e3e3;
   background-size: cover;
@@ -629,12 +580,13 @@ footer span a:hover {
 .skills{
   background-size: cover;
   font-family: "Ubuntu", sans-serif;
-  background: url("./try3.PNG") no-repeat center;
+  background: url("try3.PNG") no-repeat center;
+  background-size: cover;
   background-attachment: fixed;
   }
   .services{
-    background: url("./bgtry9.PNG") no-repeat ;
-    font-size: 22px;
+    background: url("bgtry9.PNG") no-repeat center;
+    font-size: 24px;
     font-weight: 700px;
     background-size: cover;
     font-family: "Ubuntu", sans-serif;
@@ -642,25 +594,81 @@ footer span a:hover {
 
   }
   .teams{
-    background: url("./sslc.PNG") no-repeat ;
+    height: 140vh;
+    background: url("sslc.PNG") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
+    background-size: cover;
+  }
+  .teams .title::after {
+    content: "College/University";
+      background-color: rgb(214, 27, 27);
+      color: #f0ec0b;
+    }
+  
+  .teams .carousel .card {
+    background: #f12602;
+    border: 1px solid rgb(235, 232, 238);
+    padding: 100px 80px;
+    color: #eff1f1;
+    font-weight: 100;
+    align-items: center;
+    font-size: 15px;
+    font-family: "Ubuntu", sans-serif;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  .teams .carousel .card:hover {
+    background: rgb(199, 233, 4);
+    font-family: "Ubuntu", sans-serif;
+    border: 1px solid rgb(10, 10, 10);
+    color: #000a09;
+  }
+  .teams .carousel .card .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    transform: scale(1.6);
+  }
+  .teams .carousel .card:hover .box {
+    transform: scale(2.2);
+  }
+  .teams .carousel .card .text {
+    font-size: 13px;
+    font-weight: 100;
+    margin: 50px 30px 5;
+  }
+  .teams .carousel .card img {
+    height: 180px;
+    width: 180px;
+    margin-bottom: 10px;
+    object-fit: cover;
+    border-radius: 60%;
+    border: 1px solid rgb(14, 13, 13);
+  }
+  .teams .carousel .card:hover img {
+    border-color: #f0eded;
+    box-sizing: 10px 0;
   }
   .contact{
-    background: url("./ss.PNG");
+    background: url("ss.PNG")no-repeat center;
     background-size: cover;
     font-family: "Ubuntu", sans-serif;
     background-attachment: fixed;
   }
   .contact .contact-content .info .sub-title {
     color: #e6dede;
-    font-size: 20px;
+    font-size: 24px;
+    margin-top: 10px;
     font-weight: 600;
   }
   .messageme {
     font-family: "Ubuntu", sans-serif;
     font-weight: 750;
     font-size: 25px;
+    margin-top:15px;
     color: #e4e7e7;
   }
   .card-header{ 
@@ -678,6 +686,7 @@ footer span a:hover {
     color: white;
     font-weight: 700;
     font-size: 26px;
+    margin-top: 10px;
     font-family: "Ubuntu", sans-serif;
 
   }
@@ -692,23 +701,23 @@ footer span a:hover {
     width:  55%;
   }
   .head{
-    color: rgb(8, 6, 24);
+    color: rgb(4, 2, 17);
     font-weight: 750;
-    font-size: 22px;
+    margin-top: 10px;
+    font-size: 20px;
   }
   .contact .right form .field input,
   .contact .right form .textarea textarea {
-    height: 100%;
+    height: 120%;
     width: 100%;
+    margin-bottom: 30px;
     border: 2px solid rgb(243, 243, 248);
-    background-color: #0a0a0a;
-    border-radius: 6px;
-    color: white;
-    outline: none;
-    padding: 0 15px;
+    background-color: #070707;
+    border-radius: 8px;
+    color: rgb(243, 243, 243);
+    padding: 0 5px 0;
     font-size: 20px;
-    font-family: "Poppins", sans-serif;
-    transition: all 0.3s ease;
+    font-family: "Ubuntu", sans-serif;
   }
   
   .typy{
