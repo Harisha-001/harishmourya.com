@@ -1,0 +1,728 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 25px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #da3333;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #bfdd12;
+}
+
+section {
+  padding: 60px 0;
+}
+.max-width {
+  max-width: 1350px;
+  padding: 0 50px;
+  margin: auto;
+}
+.skills,
+.teams{
+  font-family: "Poppins", sans-serif;
+  color: #e9e4e4;
+}
+.services .serv-content,
+.skills .skills-content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+section .title {
+  position: relative;
+  text-align: center;
+  font-size:35px;
+  color: #e9e5e5;
+  font-weight: 500;
+  margin-bottom: 70px;
+  padding-bottom: 50px;
+  font-family: "Ubuntu", sans-serif;
+}
+section .title::before {
+  content: "";
+  position:absolute;
+  bottom: 2px;
+  left: 50%;
+  width: 200px;
+  background-color: #f0e4e4;
+  height: 3px;
+  transform: translateX(-50%);
+}
+
+.title::after {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  font-size: 20px;
+  color: rgb(230, 223, 225);
+  padding: 0 5px;
+  background: #0c0c0c;
+  transform: translateX(-50%);
+}
+
+.navbar {
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+  padding: 40px 0;
+  font-family: "Ubuntu", sans-serif;
+  transition: all 0.3s ease;
+}
+.navbar.sticky {
+  padding: 15px 0;
+  background: crimson;
+}
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo a {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+.navbar .logo a span {
+  color: crimson;
+  transition: all 0.3s ease;
+}
+.navbar.sticky .logo a span {
+  color: #fff;
+}
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+}
+.navbar .menu li a {
+  display: block;
+  color: #fdfdfd;
+  font-size: 28px;
+  font-weight: 500;
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: 20px;
+  transition: color 0.20s ease;
+}
+
+.navbar .menu li a:hover {
+    color: rgb(14, 13, 13);
+    background-color: #f2fff4;
+    cursor: pointer;
+    padding: 3px 10px;
+    border-radius: 5px;
+}
+.navbar.sticky .menu li a:hover {
+  color: #fff;
+}
+
+.menu-btn {
+  color: #fff;
+  font-size: 23px;
+  cursor: pointer;
+  display: none;
+}
+.scroll-up-btn {
+  position: fixed;
+  height: 45px;
+  width: 42px;
+  background: crimson;
+  right: 30px;
+  bottom: 10px;
+  text-align: center;
+  line-height: 45px;
+  color: #fff;
+  z-index: 9999;
+  font-size: 30px;
+  border-radius: 6px;
+  border-bottom-width: 2px;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.scroll-up-btn.show {
+  bottom: 30px;
+  opacity: 1;
+  pointer-events: auto;
+}
+.scroll-up-btn:hover {
+  filter: brightness(90%);
+}
+
+.home .max-width {
+  width: 100%;
+  display: flex;
+}
+.home .max-width .row {
+  margin-right: 0;
+}
+.home .home-content .text-1 {
+  font-size: 28px;
+}
+.home .home-content .text-2 {
+  font-size: 78px;
+  font-weight: 700;
+  margin-left: -6px;
+}
+.home .home-content .text-3 {
+  font-size: 50px;
+  margin: 8px 0;
+}
+.home .home-content .text-3 span {
+  color: rgb(221, 212, 221);
+  font-weight: 500;
+}
+.home .home-content .text-3 span:hover{
+  color: rgb(238, 43, 8);
+  font-size: 30px;
+}
+.home .home-content a {
+  display: inline-block;
+  background: rgb(214, 7, 7);
+  color: #f3f0f0;
+  font-size: 28px;
+  padding: 8px 20px;
+  margin-top: 20px;
+  font-weight: 400;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+.home .home-content a:hover {
+  color:rgb(245, 235, 235); 
+  background: rgb(13, 14, 13);
+  border: 1px solid rgb(239, 235, 243);
+}
+
+.about .title::after {
+  content: "who i am";
+}
+.about .about-content .left {
+  width: 50%;
+}
+.about .about-content .left img {
+  height: 550px;
+  width: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.about .about-content .right {
+  width: 95%;
+}
+.about .about-content .right .text {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom:40px;
+}
+
+.about .about-content .right p {
+  text-align: justify;
+}
+.about .about-content .right a {
+  display: inline-block;
+  background: rgb(15, 15, 15);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 30px;
+  margin-top: 30px;
+  border-radius: 6px;
+  border: 2px solid rgb(22, 146, 196);
+  transition: all 0.3s ease;
+}
+.about .about-content .right a:hover {
+  color: rgb(235, 231, 12);
+  background: red;
+  border-radius: 6px;
+  border: 2px solid rgb(238, 234, 4);
+}
+.services .title::after {
+  color: #0a0a0a;
+  content: "what i provide";
+  background-color: rgb(21, 221, 37);
+}
+.services .serv-content .card {
+  width: calc(30% - 80px);
+  background: #030303;
+  text-align: center;
+  border-radius: 6px;
+  padding: 80px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.services .serv-content .card:hover .box {
+  color: #070707;
+  background-color: #f8efef;
+}
+.services .serv-content .card .text {
+  font-size: 26px;
+  font-weight: 650;
+  margin: 15px 0 10px 0;
+}
+.skills .title::after {
+  color: #110436;
+  content: "what i know";
+  background-color: rgb(10, 247, 227);
+}
+.skills .skills-content .column {
+  width: calc(95% - 90px);
+  align-items: center;
+}
+.skills .skills-content .left .text {
+  font-size: 35px;
+  font-weight: 950;
+}
+.skills .skills-content .right .bars {
+  margin-bottom: 40px;
+}
+.skills .skills-content .right .info {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+.skills .skills-content .right span {
+  font-weight: 500;
+  font-size: 22px;
+}
+.skills .skills-content .right .line {
+  height: 8px;
+  width: 100%;
+  background:rgb(231, 208, 1);
+  position: relative;
+  border: 1px solid rgb(243, 237, 237);
+
+}
+.skills .skills-content .right .line::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  background: rgb(240, 4, 4);
+}
+.card-content {
+  display: none;
+  color: #dde4e3;
+  font-weight: 400;
+  font-family: "Ubuntu", sans-serif;
+
+  font-size: 22px;
+}
+.reading-card.open {
+  height: auto;
+ 
+}
+.reading-card.open .card-content {
+  display: block;
+
+}
+.skills-content .right .html::before {
+  width: 70%;
+}
+.skills-content .right .css::before {
+  width: 70%;
+}
+.skills-content .right .js::before {
+  width: 70%;
+}
+.skills-content .right .php::before {
+  width: 50%;
+}
+.skills-content .right .mysql::before {
+  width: 70%;
+}
+.teams .title::after {
+  content: "College/University";
+    background-color: rgb(214, 27, 27);
+    color: #f0ec0b;
+  }
+
+.teams .carousel .card {
+  background: #f12602;
+  border: 1px solid rgb(235, 232, 238);
+  padding: 10px 35px;
+  color: #eff1f1;
+  font-weight: 600;
+  font-size: 25px;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.teams .carousel .card:hover {
+  background: rgb(199, 233, 4);
+  font-family: "Ubuntu", sans-serif;
+  border: 1px solid rgb(10, 10, 10);
+  color: #000a09;
+}
+.teams .carousel .card .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.teams .carousel .card:hover .box {
+  transform: scale(1.05);
+}
+.teams .carousel .card .text {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+.teams .carousel .card img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid crimson;
+  transition: all 0.3s ease;
+}
+.teams .carousel .card:hover img {
+  border-color: #0e0d0d;
+}
+.owl-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+.owl-dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 5px;
+  outline: none !important;
+  border-radius: 50%;
+  border: 2px solid crimson !important;
+  transition: all 0.3s ease;
+}
+.owl-dot.active {
+  width: 35px;
+  border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover {
+  background: crimson !important;
+}
+.contact .title::after {
+  color: #030303;
+  background-color: rgb(242, 237, 243);
+  content: "get in touch";
+}
+.contact .contact-content .column {
+  width: calc(50% - 30px);
+}
+.contact .contact-content .text {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.contact .contact-content .left p {
+  text-align: justify;
+}
+.contact .contact-content .left .icons {
+  margin: 10px 0;
+}
+.contact .contact-content .row {
+  display: flex;
+  height: 65px;
+  align-items: center;
+}
+.svg-phone {
+  font-size: 25px;
+  color: crimson;
+}
+.contact .contact-content .row .info {
+  margin-left: 30px;
+}
+.contact .contact-content .row i {
+  font-size: 25px;
+  color: crimson;
+}
+.row img {
+  color: crimson;
+  font-size: 45px;
+  width: 33px;
+}
+
+.right form .button-area button {
+  color: #fff;
+  display: block;
+  width: 160px !important;
+  height: 45px;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  flex-wrap: nowrap;
+  background: crimson;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+}
+.right form .button-area button:hover {
+  color: crimson;
+  background: none;
+}
+footer {
+  background: #111;
+  padding: 15px 23px;
+  color: #fff;
+  text-align: center;
+}
+footer span a {
+  color: crimson;
+  text-decoration: none;
+}
+footer span a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1104px) {
+  .about .about-content .left img {
+    height: 350px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 991px) {
+  .max-width {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 947px) {
+  .menu-btn {
+    display: block;
+    z-index: 999;
+  }
+  .menu-btn i.active:before {
+    content: "\f00d";
+  }
+  .navbar .menu {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    background: #111;
+    text-align: center;
+    padding-top: 80px;
+    transition: all 0.3s ease;
+  }
+  .navbar .menu.active {
+    left: 0;
+  }
+  .navbar .menu li {
+    display: block;
+  }
+  .navbar .menu li a {
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 25px;
+  }
+  .home .home-content .text-2 {
+    font-size: 70px;
+  }
+  .home .home-content .text-3 {
+    font-size: 35px;
+  }
+  .home .home-content a {
+    font-size: 23px;
+    padding: 10px 30px;
+  }
+  .max-width {
+    max-width: 930px;
+  }
+  .about .about-content .column {
+    width: 100%;
+  }
+  .about .about-content .left {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 60px;
+  }
+  .about .about-content .right {
+    flex: 100%;
+  }
+  .services .serv-content .card {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 690px) {
+  .max-width {
+    padding: 0 23px;
+  }
+  .home .home-content .text-2 {
+    font-size: 60px;
+  }
+  .home .home-content .text-3 {
+    font-size: 32px;
+  }
+  .home .home-content a {
+    font-size: 20px;
+  }
+  .services .serv-content .card {
+    width: 100%;
+  }
+}
+  .home .home-content .text-3 {
+    font-size: 27px;
+  }
+  
+  .right form .error-box {
+    width: 150px;
+  }
+  .scroll-up-btn {
+    right: 15px;
+    bottom: 15px;
+    height: 38px;
+    width: 35px;
+    font-size: 23px;
+    line-height: 38px;
+  }
+
+#portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 110%;
+  justify-content: space-around;
+}
+
+.portfolio-image-container {
+  max-width: 280px;
+  margin: 10px;
+}
+
+.portfolio-image-container img {
+  width: 75%;
+  height: 80%;
+}
+
+.home {
+  display: flex;
+  background: url("./try-1.PNG") no-repeat center;
+  height: 100vh;
+  color: #b9c428;
+  min-height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Ubuntu", sans-serif;
+}
+.about{
+  height: 195vh;
+  background: url("./sss.PNG") no-repeat center;
+  font-size: 26px;
+  font-weight: 500;
+  color: #e7e3e3;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.skills{
+  background-size: cover;
+  font-family: "Ubuntu", sans-serif;
+  background: url("./try3.PNG") no-repeat center;
+  background-attachment: fixed;
+  }
+  .services{
+    background: url("./bgtry9.PNG") no-repeat ;
+    font-size: 22px;
+    font-weight: 700px;
+    background-size: cover;
+    font-family: "Ubuntu", sans-serif;
+    background-attachment: fixed;
+
+  }
+  .teams{
+    background: url("./sslc.PNG") no-repeat ;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .contact{
+    background: url("./ss.PNG");
+    background-size: cover;
+    font-family: "Ubuntu", sans-serif;
+    background-attachment: fixed;
+  }
+  .contact .contact-content .info .sub-title {
+    color: #e6dede;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .messageme {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 750;
+    font-size: 25px;
+    color: #e4e7e7;
+  }
+  .card-header{ 
+    font-weight: 800;
+    font-size: 22px;
+    color: rgb(185, 37, 37);
+   border-radius: 0px #333;
+  }
+  .experiences{
+    color: white;
+    font-weight: 810;
+    font-size: 21px;
+  }
+  .touch{
+    color: white;
+    font-weight: 700;
+    font-size: 26px;
+    font-family: "Ubuntu", sans-serif;
+
+  }
+  .contact .right form .field,
+  .contact .right form .fields .field {
+    height: 50px;
+    width: 55%;
+    margin-bottom: 15px;
+  }
+  .contact .right form .textarea {
+    height: 80px;
+    width:  55%;
+  }
+  .head{
+    color: rgb(8, 6, 24);
+    font-weight: 750;
+    font-size: 22px;
+  }
+  .contact .right form .field input,
+  .contact .right form .textarea textarea {
+    height: 100%;
+    width: 100%;
+    border: 2px solid rgb(243, 243, 248);
+    background-color: #0a0a0a;
+    border-radius: 6px;
+    color: white;
+    outline: none;
+    padding: 0 15px;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    transition: all 0.3s ease;
+  }
+  
+  .typy{
+   font-size: 30px;
+   font-weight: 600;
+   color: #f5c905 ;
+   font-family: "Ubuntu", sans-serif;
+  }
+  .typy:hover{
+    font-size: 30px;
+    font-weight: 600;
+    color: #4af008 ;
+    font-family: "Ubuntu", sans-serif;
+  }
+ .thanks{
+  font-family: "Ubuntu", sans-serif;
+}
