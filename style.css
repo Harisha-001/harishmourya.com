@@ -251,6 +251,7 @@ section .title::before {
 .services{
   font-size: 24px;
   font-weight: 700px;
+  align-items: center;
   background: url("bgtry9.PNG") no-repeat center;
   font-family: "Ubuntu", sans-serif;
   background-attachment: fixed;
@@ -332,7 +333,6 @@ section .title::before {
   color: #dde4e3;
   font-weight: 400;
   font-family: "Ubuntu", sans-serif;
-  margin-left: 20px;
   font-size: 22px;
 }
 .reading-card.open {
@@ -388,10 +388,6 @@ section .title::before {
   height: 80px;
   margin-bottom: 10px;
   align-items: center;
-}
-
-.contact .contact-content .row .info {
-  margin-left:20px;
 }
 
 .row img {
@@ -695,10 +691,7 @@ footer span a:hover {
   padding-left: 0px;
   margin: 0px;
 }
-#name-social-container {
-  margin-top: 32vh;
-  margin-left: -530px;
-}
+
 .horizontal-list li {
   display: inline-block;
   margin: 0px 8px 8px 0px;
