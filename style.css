@@ -249,6 +249,8 @@ section .title::before {
   border: 2px solid rgb(238, 234, 4);
 }
 .services{
+  font-size: 24px;
+  font-weight: 700px;
   background: url("bgtry9.PNG") no-repeat center;
   font-family: "Ubuntu", sans-serif;
   background-attachment: fixed;
@@ -260,7 +262,7 @@ section .title::before {
   background-color: rgb(21, 221, 37);
 }
 .services .serv-content .card {
-  width: calc(33% - 20px);
+  width: calc(30% - 80px);
   background: #030303;
   text-align: center;
   border-radius: 6px;
@@ -272,12 +274,21 @@ section .title::before {
   color: #070707;
   align-items: center;
   background-color: #f8efef;
+  transform: scale(1.05);
 }
 .services .serv-content .card .text {
   font-size: 26px;
   font-weight: 500;
   align-items: center;
-  margin: 10px 0 7px 0;
+  margin: 10px 0 8px 0;
+}
+@media (max-width: 690px) {
+  .max-width {
+    padding: 0 23px;
+  }
+  .services .serv-content .card {
+    width: 100%;
+  }
 }
 .skills .title::after {
   color: #110436;
