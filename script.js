@@ -33,29 +33,31 @@ $(document).ready(function () {
         loop: true
     });
 
-    var typed = new Typed(".typy", {
-        strings: ["SoftWare Engineer", "Frontend Web Developer", "Android developer", "Java Backend Developer"],
+    var typed = new Typed(".typing-2", {
+        strings: ["I Currently Working as a", "SoftWare Engineer", "In Utthunga Technology", "Bengaluru"],
         typeSpeed: 100,
         backSpeed: 50,
         loop: true
     });
 
+    
     $('.carousel').owlCarousel({
-        margin: 50,
+        margin: 20,
         loop: true,
         autoplay: true,
-        autoplayTimeOut: 0,
+        autoplayTimeOut: 2000,
+        autoplayHoverPause: true,
         responsive: {
-            50: {
+            0: {
                 items: 1,
                 nav: false
             },
-            30: {
+            600: {
                 items: 2,
                 nav: false
             },
-            20: {
-                items: 4,
+            1000: {
+                items: 3,
                 nav: false
             }
         }
