@@ -40,7 +40,7 @@ section {
 .teams,
 .contact,
 footer {
-  font-family: "Poppins", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 .about .about-content,
 .services .serv-content,
@@ -62,22 +62,22 @@ section .title {
 }
 section .title::before {
   content: "";
-  position: absolute;
-  bottom: 0px;
+  position:absolute;
+  bottom: 2px;
   left: 50%;
-  width: 180px;
+  width: 200px;
+  background-color: #f0e4e4;
   height: 3px;
-  background: #111;
   transform: translateX(-50%);
 }
-section .title::after {
+.title::after {
   position: absolute;
   bottom: -8px;
   left: 50%;
   font-size: 20px;
-  color: crimson;
+  color: rgb(230, 223, 225);
   padding: 0 5px;
-  background: #fff;
+  background: #0c0c0c;
   transform: translateX(-50%);
 }
 
@@ -91,8 +91,8 @@ section .title::after {
   transition: all 0.3s ease;
 }
 .navbar.sticky {
-  padding: 15px 0;
-  background: crimson;
+  padding: 18px 0;
+  background: rgb(17, 17, 17);
 }
 .navbar .max-width {
   display: flex;
@@ -100,16 +100,21 @@ section .title::after {
   justify-content: space-between;
 }
 .navbar .logo a {
-  color: #fff;
-  font-size: 35px;
+  color: #f1f1e7;
+  font-size: 38px;
+  font-weight: 600;
+}
+.navbar .logo a :hover{
+  color: #e63f0c;
+  font-size: 38px;
   font-weight: 600;
 }
 .navbar .logo a span {
-  color: crimson;
+  color: rgb(238, 54, 8);
   transition: all 0.3s ease;
 }
 .navbar.sticky .logo a span {
-  color: #fff;
+  color: #dbeb07;
 }
 .navbar .menu li {
   list-style: none;
@@ -117,17 +122,22 @@ section .title::after {
 }
 .navbar .menu li a {
   display: block;
-  color: #fff;
-  font-size: 18px;
+  color: #e7e1e1;
+  font-size: 25px;
   font-weight: 500;
-  margin-left: 25px;
+  margin-left:19px;
   transition: color 0.3s ease;
 }
 .navbar .menu li a:hover {
-  color: crimson;
+    color: rgb(10, 10, 10);
+    background-color: #f2fff4;
+    cursor: pointer;
+    padding: 3px 10px;
+    border-radius: 5px;
+
 }
 .navbar.sticky .menu li a:hover {
-  color: #fff;
+  color: #0e0d0d;
 }
 
 /* menu btn styling */
@@ -170,8 +180,8 @@ section .title::after {
   display: flex;
   background: url("try-1.PNG") no-repeat center;
   height: 100vh;
-  color: #fff;
-  min-height: 500px;
+  color: #f1ee10;
+  min-height: 400px;
   background-size: cover;
   background-attachment: fixed;
   font-family: "Ubuntu", sans-serif;
@@ -184,7 +194,9 @@ section .title::after {
   margin-right: 0;
 }
 .home .home-content .text-1 {
-  font-size: 27px;
+  font-size: 25px;
+  font-weight: 500;
+  font-family: "Ubuntu", sans-serif;
 }
 .home .home-content .text-2 {
   font-size: 75px;
@@ -290,7 +302,7 @@ section .title::after {
 }
 .services .title::after,
 .teams .title::after {
-  background: #cbec0d;
+  background: #0a0614;
   content: "what i provide";
 }
 .services .serv-content .card {
@@ -419,20 +431,25 @@ section .title::after {
   content: "College/University";
 }
 .teams .carousel .card {
-  background: #222;
+  background: #55c03b;
   border-radius: 6px;
+  margin-bottom: 20px;
+  margin-bottom: 20px;
   padding: 25px 35px;
   text-align: center;
+ 
   overflow: hidden;
   transition: all 0.3s ease;
 }
 .teams .carousel .card:hover {
   background: crimson;
+  
 }
 .teams .carousel .card .box {
   display: flex;
   flex-direction: column;
   align-items: center;
+ 
   justify-content: center;
   transition: all 0.3s ease;
 }
@@ -488,8 +505,8 @@ section .title::after {
 
 .contact .title::after {
   content: "get in touch";
-  background-color: #f3a109;
-  color: rgb(0, 0, 0);
+  background-color: #0f0f0f;
+  color: rgb(233, 224, 224);
 }
 .contact .contact-content .column {
   width: calc(50% - 30px);
@@ -788,4 +805,87 @@ footer span a:hover {
 }
 .reading-card.open .card-content {
   display: block;
+}
+.details {
+  margin: 25px 0 25px;
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.details div {
+  /* margin-top: 15px; */
+  padding: 10px 20px;
+  border: 2px solid transparent;
+  border-radius: 0.75rem;
+  transition: 0.5s;
+}
+
+.details div:hover {
+  border: 2px solid rgb(200, 0, 0);
+  cursor: pointer;
+  transition: 0.2s linear;
+  z-index: 2;
+}
+
+.details div p {
+  font-size: 12px;
+}
+.skill-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 60px;
+    margin-top: 50px;
+}
+
+.skill-list>div{
+    border-radius: 10px;
+    box-shadow: rgba(211, 207, 207, 0.5) 4px 4px;
+    transition: 0.5s;
+    margin-right: 20px;
+    padding-bottom: 2px;
+}
+
+.skill-list>div>div>div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.skill-list>div:hover {
+    transform: scale(1.05);
+    z-index: 1;
+}
+
+.skill-list h2 {
+    margin-top:80px;
+    text-align: center;
+    color: #dae909;
+    font-weight: 400;
+    transition: 0.5s;
+}
+
+.skill-list h2:hover {
+    color: rgb(5, 219, 148);
+    text-decoration: underline;
+}
+
+.skill-list div div {
+    padding-top: 80px;
+    padding-left:100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.skill-list div div img {
+    width: 40%;
+    margin: 25px;
+    transition: 0.5s;
+}
+
+.skill-list div div img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.2s linear;
+    z-index: 2;
 }
