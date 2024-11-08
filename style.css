@@ -22,7 +22,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #131212;
 }
 
 /* all similar content styling codes */
@@ -860,8 +860,9 @@ footer span a:hover {
 .skill-list h2 {
     margin-top:80px;
     text-align: center;
-    color: #dae909;
-    font-weight: 400;
+    color: #e7e7e2;
+    font-weight: 500;
+    font-size: 30px;
     transition: 0.5s;
 }
 
@@ -871,21 +872,21 @@ footer span a:hover {
 }
 
 .skill-list div div {
-    padding-top: 80px;
-    padding-left:100px;
+    padding-top: 40px;
+    padding-left:40px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
 .skill-list div div img {
     width: 40%;
-    margin: 25px;
+    margin: 20px;
     transition: 0.5s;
 }
 
 .skill-list div div img:hover {
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1.5);
     transition: 0.2s linear;
     z-index: 2;
 }
